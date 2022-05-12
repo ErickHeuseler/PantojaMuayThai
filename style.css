@@ -491,12 +491,12 @@ footer .social-links {
 }
 #testimonials blockquote {
   padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0.08);
-  border-radius: 0.25;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
 }
 #testimonials blockquote p {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -745,29 +745,43 @@ footer .social-links {
   }
   #about .col-a {
     align-self: center;
+    
   }
 
   #about .content p {
     margin-bottom: 0;
   }
 
+  #contact{
+    padding: 0;
+  }
+
   #contact .wrapper {
-    grid-template-columns: 1fr 50rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
+  }
+  #contact .col-a{
+    text-align: left;
+    align-self: center;
+    padding-block: 6rem;
+  }
+  #contact .col-a .button{
+    margin: 0;
+  }
+
+  #contact .col-b .content{
+    position: fixed;
   }
 
   #contact h2 {
     width: 40.2rem;
   }
-
-  #contact iframe {
-    height: 39.7rem;
-  }
-
+  
   #testimonials .wrapper {
     grid-template-columns: 1fr 50rem;
     grid-template-areas: 'A B';
   }
+
   #testimonials .col-a {
     text-align: left;
     align-self: center;
